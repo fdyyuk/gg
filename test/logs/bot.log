@@ -1,0 +1,1138 @@
+2025-05-21 20:01:35,396 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-05-21 20:01:35,449 - database - INFO - Database setup completed successfully
+2025-05-21 20:01:35,485 - __main__ - INFO - Database initialized successfully
+2025-05-21 20:01:35,486 - discord.client - INFO - logging in using static token
+2025-05-21 20:01:36,746 - __main__ - ERROR - ❌ Failed to load cogs.admin: Extension 'cogs.admin' raised an error: SyntaxError: invalid syntax (admin.py, line 249)
+2025-05-21 20:01:36,746 - __main__ - ERROR - Detailed error loading cogs.admin:
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 951, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/storage/emulated/0/test/cogs/admin.py", line 249
+    growid=growid.(),
+                  ^
+SyntaxError: invalid syntax
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/test/main.py", line 123, in setup_hook
+    await self.load_extension(ext)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1029, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 954, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.admin' raised an error: SyntaxError: invalid syntax (admin.py, line 249)
+2025-05-21 20:01:37,125 - LiveStock - INFO - LiveStock cog loaded and task started
+2025-05-21 20:01:37,126 - ext.live - INFO - LiveStock cog loaded successfully at 2025-05-21 13:01:37 UTC
+2025-05-21 20:01:37,126 - __main__ - INFO - ✅ Loaded extension: ext.live
+2025-05-21 20:01:37,132 - root - INFO - Transaction cog loaded successfully at 2025-05-21 13:01:37 UTC
+2025-05-21 20:01:37,132 - __main__ - INFO - ✅ Loaded extension: ext.trx
+2025-05-21 20:01:37,278 - Donation - INFO - Starting donation server on port 8081
+2025-05-21 20:01:37,279 - Donation - INFO - Donation cog initialized
+2025-05-21 20:01:37,279 - root - INFO - Donation cog loaded successfully
+2025-05-21 20:01:37,280 - __main__ - INFO - ✅ Loaded extension: ext.donate
+2025-05-21 20:01:37,286 - BalanceManagerCog - INFO - BalanceManagerCog loading...
+2025-05-21 20:01:37,287 - root - INFO - BalanceManager cog loaded successfully at 2025-05-21 13:01:37 UTC
+2025-05-21 20:01:37,287 - __main__ - INFO - ✅ Loaded extension: ext.balance_manager
+2025-05-21 20:01:37,292 - ProductManagerCog - INFO - ProductManagerCog loading...
+2025-05-21 20:01:37,293 - root - INFO - ProductManager cog loaded successfully at 2025-05-21 13:01:37 UTC
+2025-05-21 20:01:37,293 - __main__ - INFO - ✅ Loaded extension: ext.product_manager
+2025-05-21 20:01:43,277 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 2c8174c9a8508e80586e45e6c4ca3bd0).
+2025-05-21 20:01:45,330 - __main__ - INFO - Bot FDY is ready!
+2025-05-21 20:01:45,330 - __main__ - INFO - Bot ID: 1318180029091287071
+2025-05-21 20:01:45,330 - __main__ - INFO - Guild ID: 1318806349118963722
+2025-05-21 20:01:45,331 - __main__ - INFO - Admin ID: 1035189920488235120
+2025-05-21 20:01:45,331 - __main__ - INFO - ✅ Found Live Stock channel: 📜⌗・live-stock
+2025-05-21 20:01:45,331 - __main__ - INFO - ✅ Found Purchase Log channel: log-purch
+2025-05-21 20:01:45,331 - __main__ - INFO - ✅ Found Donation Log channel: deposit
+2025-05-21 20:01:45,331 - __main__ - INFO - ✅ Found History Buy channel: buy-logs
+2025-05-21 20:01:45,331 - __main__ - INFO - ✅ Found Music channel: 🔔⌗・music
+2025-05-21 20:01:45,331 - __main__ - INFO - ✅ Found Logs channel: 🔔⌗・logs
+2025-05-21 20:01:45,350 - TransactionCog - INFO - TransactionCog is ready at 2025-05-21 13:01:45 UTC
+2025-05-21 20:01:45,350 - BalanceManagerCog - INFO - BalanceManagerCog is ready at 2025-05-21 13:01:45 UTC
+2025-05-21 20:01:45,979 - LiveStock - INFO - Created initial message 1374733915465584795
+2025-05-21 20:02:10,170 - utils.command_handler - ERROR - Error in command help: HelpCommand.command_callback() takes 2 positional arguments but 3 positional arguments (and 1 keyword-only argument) were given
+2025-05-21 20:02:40,570 - BalanceManagerService - INFO - Registered Discord user 1035189920488235120 with GrowID Kentos
+2025-05-21 20:02:40,598 - SetGrowIDModal - ERROR - Error in SetGrowIDModal: 'str' object is not callable
+2025-05-21 20:03:13,487 - BalanceManagerService - INFO - Found GrowID for Discord ID 1035189920488235120: Kentos
+2025-05-21 22:26:28,228 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-05-21 22:26:28,313 - database - INFO - Database setup completed successfully
+2025-05-21 22:26:28,357 - __main__ - INFO - Database initialized successfully
+2025-05-21 22:26:28,357 - discord.client - INFO - logging in using static token
+2025-05-21 22:26:30,010 - __main__ - ERROR - ❌ Failed to load cogs.admin: Extension 'cogs.admin' raised an error: SyntaxError: invalid syntax (admin.py, line 249)
+2025-05-21 22:26:30,011 - __main__ - ERROR - Detailed error loading cogs.admin:
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 951, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1133, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1063, in source_to_code
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/storage/emulated/0/test/cogs/admin.py", line 249
+    growid=growid.(),
+                  ^
+SyntaxError: invalid syntax
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/test/main.py", line 123, in setup_hook
+    await self.load_extension(ext)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1029, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 954, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.admin' raised an error: SyntaxError: invalid syntax (admin.py, line 249)
+2025-05-21 22:26:30,490 - LiveStock - INFO - LiveStock cog loaded and task started
+2025-05-21 22:26:30,491 - ext.live - INFO - LiveStock cog loaded successfully at 2025-05-21 15:26:30 UTC
+2025-05-21 22:26:30,491 - __main__ - INFO - ✅ Loaded extension: ext.live
+2025-05-21 22:26:30,499 - root - INFO - Transaction cog loaded successfully at 2025-05-21 15:26:30 UTC
+2025-05-21 22:26:30,500 - __main__ - INFO - ✅ Loaded extension: ext.trx
+2025-05-21 22:26:30,609 - Donation - INFO - Starting donation server on port 8081
+2025-05-21 22:26:30,609 - Donation - INFO - Donation cog initialized
+2025-05-21 22:26:30,610 - root - INFO - Donation cog loaded successfully
+2025-05-21 22:26:30,610 - __main__ - INFO - ✅ Loaded extension: ext.donate
+2025-05-21 22:26:30,617 - BalanceManagerCog - INFO - BalanceManagerCog loading...
+2025-05-21 22:26:30,618 - root - INFO - BalanceManager cog loaded successfully at 2025-05-21 15:26:30 UTC
+2025-05-21 22:26:30,618 - __main__ - INFO - ✅ Loaded extension: ext.balance_manager
+2025-05-21 22:26:30,625 - ProductManagerCog - INFO - ProductManagerCog loading...
+2025-05-21 22:26:30,625 - root - INFO - ProductManager cog loaded successfully at 2025-05-21 15:26:30 UTC
+2025-05-21 22:26:30,626 - __main__ - INFO - ✅ Loaded extension: ext.product_manager
+2025-05-21 22:26:31,683 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 2dbdcb7f910841fc2055f7260bb4c224).
+2025-05-21 22:26:33,726 - __main__ - INFO - Bot FDY is ready!
+2025-05-21 22:26:33,726 - __main__ - INFO - Bot ID: 1318180029091287071
+2025-05-21 22:26:33,726 - __main__ - INFO - Guild ID: 1318806349118963722
+2025-05-21 22:26:33,726 - __main__ - INFO - Admin ID: 1035189920488235120
+2025-05-21 22:26:33,727 - __main__ - INFO - ✅ Found Live Stock channel: 📜⌗・live-stock
+2025-05-21 22:26:33,727 - __main__ - INFO - ✅ Found Purchase Log channel: log-purch
+2025-05-21 22:26:33,727 - __main__ - INFO - ✅ Found Donation Log channel: deposit
+2025-05-21 22:26:33,727 - __main__ - INFO - ✅ Found History Buy channel: buy-logs
+2025-05-21 22:26:33,727 - __main__ - INFO - ✅ Found Music channel: 🔔⌗・music
+2025-05-21 22:26:33,728 - __main__ - INFO - ✅ Found Logs channel: 🔔⌗・logs
+2025-05-21 22:26:33,729 - TransactionCog - INFO - TransactionCog is ready at 2025-05-21 15:26:33 UTC
+2025-05-21 22:26:33,729 - BalanceManagerCog - INFO - BalanceManagerCog is ready at 2025-05-21 15:26:33 UTC
+2025-05-21 22:26:34,135 - LiveStock - INFO - Created initial message 1374770357545996392
+2025-05-21 22:26:45,940 - BalanceManagerService - INFO - Found GrowID for Discord ID 1035189920488235120: Kentos
+2025-05-21 22:27:15,194 - BalanceManagerService - INFO - Registered Discord user 1035189920488235120 with GrowID Fdy
+2025-05-21 22:27:15,231 - SetGrowIDModal - ERROR - Error in SetGrowIDModal: 'str' object is not callable
+2025-05-21 22:27:40,364 - utils.command_handler - ERROR - Error in command help: HelpCommand.command_callback() takes 2 positional arguments but 3 positional arguments (and 1 keyword-only argument) were given
+2025-05-21 22:43:26,797 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-05-21 22:43:26,867 - database - INFO - Database setup completed successfully
+2025-05-21 22:43:26,897 - __main__ - INFO - Database initialized successfully
+2025-05-21 22:43:26,897 - discord.client - INFO - logging in using static token
+2025-05-21 22:43:28,351 - __main__ - ERROR - ❌ Failed to load cogs.admin: Extension 'cogs.admin' raised an error: ModuleNotFoundError: No module named 'utils.exceptions'
+2025-05-21 22:43:28,351 - __main__ - ERROR - Detailed error loading cogs.admin:
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 951, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/storage/emulated/0/test/cogs/admin.py", line 22, in <module>
+    from ext.product_manager import ProductManagerService
+  File "/storage/emulated/0/test/ext/product_manager.py", line 12, in <module>
+    from utils.exceptions import ProductManagerError  # Tambahkan import untuk custom exception
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'utils.exceptions'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/test/main.py", line 124, in setup_hook
+    await self.load_extension(ext)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1029, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 954, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'cogs.admin' raised an error: ModuleNotFoundError: No module named 'utils.exceptions'
+2025-05-21 22:43:28,462 - __main__ - ERROR - ❌ Failed to load ext.live: Extension 'ext.live' raised an error: ModuleNotFoundError: No module named 'utils.exceptions'
+2025-05-21 22:43:28,462 - __main__ - ERROR - Detailed error loading ext.live:
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 951, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/storage/emulated/0/test/ext/live.py", line 12, in <module>
+    from ext.product_manager import ProductManagerService
+  File "/storage/emulated/0/test/ext/product_manager.py", line 12, in <module>
+    from utils.exceptions import ProductManagerError  # Tambahkan import untuk custom exception
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'utils.exceptions'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/test/main.py", line 124, in setup_hook
+    await self.load_extension(ext)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1029, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 954, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'ext.live' raised an error: ModuleNotFoundError: No module named 'utils.exceptions'
+2025-05-21 22:43:28,546 - root - INFO - Transaction cog loaded successfully at 2025-05-21 15:43:28 UTC
+2025-05-21 22:43:28,547 - __main__ - INFO - ✅ Loaded extension: ext.trx
+2025-05-21 22:43:28,665 - Donation - ERROR - Failed to start donation server: [Errno 98] Address already in use
+2025-05-21 22:43:28,665 - Donation - INFO - Donation cog initialized
+2025-05-21 22:43:28,666 - root - INFO - Donation cog loaded successfully
+2025-05-21 22:43:28,666 - __main__ - INFO - ✅ Loaded extension: ext.donate
+2025-05-21 22:43:28,672 - BalanceManagerCog - INFO - BalanceManagerCog loading...
+2025-05-21 22:43:28,673 - root - INFO - BalanceManager cog loaded successfully at 2025-05-21 15:43:28 UTC
+2025-05-21 22:43:28,673 - __main__ - INFO - ✅ Loaded extension: ext.balance_manager
+2025-05-21 22:43:28,677 - __main__ - ERROR - ❌ Failed to load ext.product_manager: Extension 'ext.product_manager' raised an error: ModuleNotFoundError: No module named 'utils.exceptions'
+2025-05-21 22:43:28,678 - __main__ - ERROR - Detailed error loading ext.product_manager:
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 951, in _load_from_module_spec
+    spec.loader.exec_module(lib)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/storage/emulated/0/test/ext/product_manager.py", line 12, in <module>
+    from utils.exceptions import ProductManagerError  # Tambahkan import untuk custom exception
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'utils.exceptions'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/storage/emulated/0/test/main.py", line 124, in setup_hook
+    await self.load_extension(ext)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1029, in load_extension
+    await self._load_from_module_spec(spec, name)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 954, in _load_from_module_spec
+    raise errors.ExtensionFailed(key, e) from e
+discord.ext.commands.errors.ExtensionFailed: Extension 'ext.product_manager' raised an error: ModuleNotFoundError: No module named 'utils.exceptions'
+2025-05-21 22:43:29,574 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 9588ce23b6c37ad643a795e3b1c6cc06).
+2025-05-21 22:43:31,626 - __main__ - INFO - Bot FDY is ready!
+2025-05-21 22:43:31,627 - __main__ - INFO - Bot ID: 1318180029091287071
+2025-05-21 22:43:31,627 - __main__ - INFO - Guild ID: 1318806349118963722
+2025-05-21 22:43:31,627 - __main__ - INFO - Admin ID: 1035189920488235120
+2025-05-21 22:43:31,627 - __main__ - INFO - ✅ Found Live Stock channel: 📜⌗・live-stock
+2025-05-21 22:43:31,627 - __main__ - INFO - ✅ Found Purchase Log channel: log-purch
+2025-05-21 22:43:31,627 - __main__ - INFO - ✅ Found Donation Log channel: deposit
+2025-05-21 22:43:31,628 - __main__ - INFO - ✅ Found History Buy channel: buy-logs
+2025-05-21 22:43:31,628 - __main__ - INFO - ✅ Found Music channel: 🔔⌗・music
+2025-05-21 22:43:31,628 - __main__ - INFO - ✅ Found Logs channel: 🔔⌗・logs
+2025-05-21 22:43:31,629 - TransactionCog - INFO - TransactionCog is ready at 2025-05-21 15:43:31 UTC
+2025-05-21 22:43:31,629 - BalanceManagerCog - INFO - BalanceManagerCog is ready at 2025-05-21 15:43:31 UTC
+2025-05-21 22:44:43,924 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-05-21 22:44:44,015 - database - INFO - Database setup completed successfully
+2025-05-21 22:44:44,034 - __main__ - INFO - Database initialized successfully
+2025-05-21 22:44:44,035 - discord.client - INFO - logging in using static token
+2025-05-21 22:44:45,318 - AdminCog - INFO - Admin ID loaded: 1035189920488235120
+2025-05-21 22:44:45,320 - root - INFO - Admin cog loaded successfully at 2025-05-21 15:44:45 UTC
+2025-05-21 22:44:45,320 - __main__ - INFO - ✅ Loaded extension: cogs.admin
+2025-05-21 22:44:45,361 - LiveStock - INFO - LiveStock cog loaded and task started
+2025-05-21 22:44:45,362 - ext.live - INFO - LiveStock cog loaded successfully at 2025-05-21 15:44:45 UTC
+2025-05-21 22:44:45,362 - __main__ - INFO - ✅ Loaded extension: ext.live
+2025-05-21 22:44:45,367 - root - INFO - Transaction cog loaded successfully at 2025-05-21 15:44:45 UTC
+2025-05-21 22:44:45,367 - __main__ - INFO - ✅ Loaded extension: ext.trx
+2025-05-21 22:44:45,422 - Donation - ERROR - Failed to start donation server: [Errno 98] Address already in use
+2025-05-21 22:44:45,423 - Donation - INFO - Donation cog initialized
+2025-05-21 22:44:45,423 - root - INFO - Donation cog loaded successfully
+2025-05-21 22:44:45,423 - __main__ - INFO - ✅ Loaded extension: ext.donate
+2025-05-21 22:44:45,427 - BalanceManagerCog - INFO - BalanceManagerCog loading...
+2025-05-21 22:44:45,428 - root - INFO - BalanceManager cog loaded successfully at 2025-05-21 15:44:45 UTC
+2025-05-21 22:44:45,428 - __main__ - INFO - ✅ Loaded extension: ext.balance_manager
+2025-05-21 22:44:45,434 - ProductManagerCog - INFO - ProductManagerCog loading...
+2025-05-21 22:44:45,435 - root - INFO - ProductManager cog loaded successfully at 2025-05-21 15:44:45 UTC
+2025-05-21 22:44:45,435 - __main__ - INFO - ✅ Loaded extension: ext.product_manager
+2025-05-21 22:44:46,160 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 9089618c742fba6ddc43a826873459c1).
+2025-05-21 22:44:48,182 - __main__ - INFO - Bot FDY is ready!
+2025-05-21 22:44:48,183 - __main__ - INFO - Bot ID: 1318180029091287071
+2025-05-21 22:44:48,183 - __main__ - INFO - Guild ID: 1318806349118963722
+2025-05-21 22:44:48,183 - __main__ - INFO - Admin ID: 1035189920488235120
+2025-05-21 22:44:48,184 - __main__ - INFO - ✅ Found Live Stock channel: 📜⌗・live-stock
+2025-05-21 22:44:48,184 - __main__ - INFO - ✅ Found Purchase Log channel: log-purch
+2025-05-21 22:44:48,184 - __main__ - INFO - ✅ Found Donation Log channel: deposit
+2025-05-21 22:44:48,184 - __main__ - INFO - ✅ Found History Buy channel: buy-logs
+2025-05-21 22:44:48,184 - __main__ - INFO - ✅ Found Music channel: 🔔⌗・music
+2025-05-21 22:44:48,185 - __main__ - INFO - ✅ Found Logs channel: 🔔⌗・logs
+2025-05-21 22:44:48,186 - TransactionCog - INFO - TransactionCog is ready at 2025-05-21 15:44:48 UTC
+2025-05-21 22:44:48,186 - BalanceManagerCog - INFO - BalanceManagerCog is ready at 2025-05-21 15:44:48 UTC
+2025-05-21 22:44:49,187 - LiveStock - INFO - Created initial message 1374774948731817987
+2025-05-21 22:45:17,517 - utils.command_handler - ERROR - Error in command help: HelpCommand.command_callback() takes 2 positional arguments but 3 positional arguments (and 1 keyword-only argument) were given
+2025-05-21 22:45:17,537 - utils.command_handler - ERROR - Error in command help: HelpCommand.command_callback() takes 2 positional arguments but 3 positional arguments (and 1 keyword-only argument) were given
+2025-05-21 22:45:17,562 - utils.command_handler - ERROR - Error in command help: HelpCommand.command_callback() takes 2 positional arguments but 3 positional arguments (and 1 keyword-only argument) were given
+2025-05-21 22:45:18,211 - discord.http - WARNING - We are being rate limited. POST https://discord.com/api/v10/channels/1318207952796254238/messages responded with 429. Retrying in 0.30 seconds.
+2025-05-21 22:45:38,441 - utils.command_handler - ERROR - Error in command help: HelpCommand.command_callback() takes 2 positional arguments but 3 positional arguments (and 1 keyword-only argument) were given
+2025-05-21 22:45:38,476 - utils.command_handler - ERROR - Error in command help: HelpCommand.command_callback() takes 2 positional arguments but 3 positional arguments (and 1 keyword-only argument) were given
+2025-05-21 22:45:38,600 - utils.command_handler - ERROR - Error in command help: HelpCommand.command_callback() takes 2 positional arguments but 3 positional arguments (and 1 keyword-only argument) were given
+2025-05-21 22:45:38,916 - discord.http - WARNING - We are being rate limited. POST https://discord.com/api/v10/channels/1318207952796254238/messages responded with 429. Retrying in 0.42 seconds.
+2025-05-21 23:03:24,238 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9089618c742fba6ddc43a826873459c1.
+2025-05-22 00:08:54,782 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 2dbdcb7f910841fc2055f7260bb4c224.
+2025-05-22 01:51:15,332 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9588ce23b6c37ad643a795e3b1c6cc06.
+2025-05-22 01:52:09,325 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9089618c742fba6ddc43a826873459c1.
+2025-05-22 02:34:47,242 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 2dbdcb7f910841fc2055f7260bb4c224.
+2025-05-22 02:47:06,389 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9588ce23b6c37ad643a795e3b1c6cc06.
+2025-05-22 03:00:54,635 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9089618c742fba6ddc43a826873459c1.
+2025-05-22 03:47:25,103 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 2dbdcb7f910841fc2055f7260bb4c224.
+2025-05-22 04:01:30,109 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9588ce23b6c37ad643a795e3b1c6cc06.
+2025-05-22 04:41:35,428 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 2dbdcb7f910841fc2055f7260bb4c224.
+2025-05-22 04:59:20,839 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9089618c742fba6ddc43a826873459c1.
+2025-05-22 06:02:01,664 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 2dbdcb7f910841fc2055f7260bb4c224.
+2025-05-22 06:42:59,300 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9089618c742fba6ddc43a826873459c1.
+2025-05-22 07:12:42,452 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 40.2s behind.
+2025-05-22 07:12:47,271 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 37.8s behind.
+2025-05-22 07:13:00,196 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 29.0s behind.
+2025-05-22 07:13:50,655 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 14.9s behind.
+2025-05-22 07:14:24,298 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 25.0s behind.
+2025-05-22 07:14:33,495 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 16.2s behind.
+2025-05-22 07:14:37,418 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9089618c742fba6ddc43a826873459c1.
+2025-05-22 07:14:40,333 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 35.3s behind.
+2025-05-22 07:14:46,969 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9588ce23b6c37ad643a795e3b1c6cc06.
+2025-05-22 07:18:22,348 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 40.6s behind.
+2025-05-22 07:18:34,223 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 35.6s behind.
+2025-05-22 07:18:54,266 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 18.7s behind.
+2025-05-22 07:19:13,678 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 11.2s behind.
+2025-05-22 07:19:44,384 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 25.5s behind.
+2025-05-22 07:20:03,740 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 18.9s behind.
+2025-05-22 07:20:34,489 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 35.5s behind.
+2025-05-22 07:20:54,032 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 28.3s behind.
+2025-05-22 07:20:54,525 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 16.9s behind.
+2025-05-22 07:21:44,150 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 37.5s behind.
+2025-05-22 07:21:44,409 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 25.9s behind.
+2025-05-22 07:22:05,739 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 10.1s behind.
+2025-05-22 07:22:34,652 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 34.3s behind.
+2025-05-22 07:22:40,050 - discord.http - WARNING - We are being rate limited. PATCH https://discord.com/api/v10/channels/1318806350310146114/messages/1374774948731817987 responded with 429. Retrying in 1.29 seconds.
+2025-05-22 07:22:40,070 - discord.http - WARNING - We are being rate limited. PATCH https://discord.com/api/v10/channels/1318806350310146114/messages/1374770357545996392 responded with 429. Retrying in 1.26 seconds.
+2025-05-22 07:22:41,715 - discord.http - WARNING - We are being rate limited. PATCH https://discord.com/api/v10/channels/1318806350310146114/messages/1374774948731817987 responded with 429. Retrying in 5.62 seconds.
+2025-05-22 07:22:55,877 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 23.3s behind.
+2025-05-22 07:22:55,879 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 13.8s behind.
+2025-05-22 07:23:29,490 - discord.http - WARNING - We are being rate limited. PATCH https://discord.com/api/v10/channels/1318806350310146114/messages/1374770357545996392 responded with 429. Retrying in 4.16 seconds.
+2025-05-22 07:23:30,125 - discord.http - WARNING - We are being rate limited. PATCH https://discord.com/api/v10/channels/1318806350310146114/messages/1374774948731817987 responded with 429. Retrying in 3.54 seconds.
+2025-05-22 07:23:31,621 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 10.0s behind.
+2025-05-22 07:23:34,029 - discord.http - WARNING - We are being rate limited. PATCH https://discord.com/api/v10/channels/1318806350310146114/messages/1374774948731817987 responded with 429. Retrying in 5.64 seconds.
+2025-05-22 07:23:40,946 - discord.http - WARNING - We are being rate limited. PATCH https://discord.com/api/v10/channels/1318806350310146114/messages/1374774948731817987 responded with 429. Retrying in 4.72 seconds.
+2025-05-22 07:23:44,445 - discord.http - WARNING - We are being rate limited. PATCH https://discord.com/api/v10/channels/1318806350310146114/messages/1374770357545996392 responded with 429. Retrying in 1.21 seconds.
+2025-05-22 07:23:45,305 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 35.6s behind.
+2025-05-22 07:23:46,095 - discord.http - WARNING - We are being rate limited. PATCH https://discord.com/api/v10/channels/1318806350310146114/messages/1374770357545996392 responded with 429. Retrying in 5.57 seconds.
+2025-05-22 07:23:46,783 - discord.http - WARNING - We are being rate limited. PATCH https://discord.com/api/v10/channels/1318806350310146114/messages/1374774948731817987 responded with 429. Retrying in 4.87 seconds.
+2025-05-22 07:23:51,997 - discord.http - WARNING - We are being rate limited. PATCH https://discord.com/api/v10/channels/1318806350310146114/messages/1374774948731817987 responded with 429. Retrying in 5.66 seconds.
+2025-05-22 07:31:15,037 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 2dbdcb7f910841fc2055f7260bb4c224.
+2025-05-22 07:31:15,037 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9089618c742fba6ddc43a826873459c1.
+2025-05-22 07:31:15,081 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9588ce23b6c37ad643a795e3b1c6cc06.
+2025-05-22 07:33:35,047 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9588ce23b6c37ad643a795e3b1c6cc06.
+2025-05-22 07:33:35,052 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 2dbdcb7f910841fc2055f7260bb4c224.
+2025-05-22 07:33:35,054 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9089618c742fba6ddc43a826873459c1.
+2025-05-22 07:34:25,325 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 11.6s behind.
+2025-05-22 07:34:25,325 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 11.6s behind.
+2025-05-22 07:34:25,330 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 11.6s behind.
+2025-05-22 07:35:07,241 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 2dbdcb7f910841fc2055f7260bb4c224.
+2025-05-22 07:35:07,243 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9588ce23b6c37ad643a795e3b1c6cc06.
+2025-05-22 07:35:07,244 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 9089618c742fba6ddc43a826873459c1.
+2025-05-22 07:40:58,995 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 21.9s behind.
+2025-05-22 07:40:58,995 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 21.9s behind.
+2025-05-22 07:40:58,995 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 21.9s behind.
+2025-05-22 07:41:48,711 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 35.7s behind.
+2025-05-22 07:41:48,713 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 35.7s behind.
+2025-05-22 07:41:48,728 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 35.8s behind.
+2025-05-22 07:45:04,022 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 38.5s behind.
+2025-05-22 07:45:04,119 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 38.6s behind.
+2025-05-22 07:45:04,127 - discord.gateway - WARNING - Can't keep up, shard ID None websocket is 38.7s behind.
+2025-05-22 07:51:52,807 - LiveStock - ERROR - Error updating live stock: Cannot connect to host discord.com:443 ssl:default [No address associated with hostname]
+2025-05-22 07:51:52,810 - LiveStock - ERROR - Error updating live stock: Cannot connect to host discord.com:443 ssl:default [Network is unreachable]
+2025-05-22 07:51:57,092 - discord.client - ERROR - Attempting a reconnect in 1.19s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 7] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [No address associated with hostname]
+2025-05-22 07:51:57,147 - discord.client - ERROR - Attempting a reconnect in 1.88s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 7] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-b.discord.gg:443 ssl:default [No address associated with hostname]
+2025-05-22 07:51:57,092 - discord.client - ERROR - Attempting a reconnect in 2.00s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 7] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [No address associated with hostname]
+2025-05-22 07:51:58,409 - discord.client - ERROR - Attempting a reconnect in 3.81s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 7] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [No address associated with hostname]
+2025-05-22 07:51:59,076 - discord.client - ERROR - Attempting a reconnect in 1.70s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 7] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-b.discord.gg:443 ssl:default [No address associated with hostname]
+2025-05-22 07:51:59,213 - discord.client - ERROR - Attempting a reconnect in 2.94s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 7] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [No address associated with hostname]
+2025-05-22 07:52:00,788 - discord.client - ERROR - Attempting a reconnect in 6.75s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 7] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-b.discord.gg:443 ssl:default [No address associated with hostname]
+2025-05-22 07:52:02,179 - discord.client - ERROR - Attempting a reconnect in 0.79s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 7] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [No address associated with hostname]
+2025-05-22 07:52:02,229 - discord.client - ERROR - Attempting a reconnect in 2.27s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 7] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [No address associated with hostname]
+2025-05-22 07:52:02,992 - discord.client - ERROR - Attempting a reconnect in 13.82s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 7] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-c.discord.gg:443 ssl:default [No address associated with hostname]
+2025-05-22 07:52:03,392 - LiveStock - ERROR - Error updating live stock: Cannot connect to host discord.com:443 ssl:default [No address associated with hostname]
+2025-05-22 07:52:04,514 - discord.client - ERROR - Attempting a reconnect in 12.90s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 7] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [No address associated with hostname]
+2025-05-22 07:52:07,551 - discord.client - ERROR - Attempting a reconnect in 1.67s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 7] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-b.discord.gg:443 ssl:default [No address associated with hostname]
+2025-05-22 07:52:08,803 - LiveStock - ERROR - Error updating live stock: Cannot connect to host discord.com:443 ssl:default [No address associated with hostname]
+2025-05-22 07:52:09,231 - discord.client - ERROR - Attempting a reconnect in 3.12s
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1357, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 995, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1026, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/resolver.py", line 39, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/base_events.py", line 905, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/socket.py", line 978, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 7] No address associated with hostname
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/client.py", line 701, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/gateway.py", line 375, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/http.py", line 554, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 1004, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/client.py", line 703, in _request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 548, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1056, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/aiohttp/connector.py", line 1363, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-b.discord.gg:443 ssl:default [No address associated with hostname]
+2025-05-22 20:39:23,400 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-05-22 20:39:23,459 - database - INFO - Database setup completed successfully
+2025-05-22 20:39:23,496 - __main__ - INFO - Database initialized successfully
+2025-05-22 20:39:23,496 - discord.client - INFO - logging in using static token
+2025-05-22 20:39:24,848 - AdminCog - INFO - Admin ID loaded: 1035189920488235120
+2025-05-22 20:39:24,850 - cogs.admin - INFO - Admin cog loaded successfully at 2025-05-22 13:39:24 UTC
+2025-05-22 20:39:24,850 - __main__ - INFO - ✅ Loaded extension: cogs.admin
+2025-05-22 20:39:24,851 - __main__ - ERROR - ❌ Failed to load ext.live: Extension 'ext.live' could not be loaded or found.
+2025-05-22 20:39:24,851 - __main__ - ERROR - Detailed error loading ext.live:
+Traceback (most recent call last):
+  File "/storage/emulated/0/test/main.py", line 124, in setup_hook
+    await self.load_extension(ext)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1027, in load_extension
+    raise errors.ExtensionNotFound(name)
+discord.ext.commands.errors.ExtensionNotFound: Extension 'ext.live' could not be loaded or found.
+2025-05-22 20:39:24,863 - root - INFO - Transaction cog loaded successfully at 2025-05-22 13:39:24 UTC
+2025-05-22 20:39:24,864 - __main__ - INFO - ✅ Loaded extension: ext.trx
+2025-05-22 20:39:24,910 - Donation - INFO - Starting donation server on port 8081
+2025-05-22 20:39:24,911 - Donation - INFO - Donation cog initialized
+2025-05-22 20:39:24,912 - root - INFO - Donation cog loaded successfully
+2025-05-22 20:39:24,912 - __main__ - INFO - ✅ Loaded extension: ext.donate
+2025-05-22 20:39:24,918 - BalanceManagerCog - INFO - BalanceManagerCog loading...
+2025-05-22 20:39:24,919 - root - INFO - BalanceManager cog loaded successfully at 2025-05-22 13:39:24 UTC
+2025-05-22 20:39:24,919 - __main__ - INFO - ✅ Loaded extension: ext.balance_manager
+2025-05-22 20:39:24,926 - ProductManagerCog - INFO - ProductManagerCog loading...
+2025-05-22 20:39:24,927 - root - INFO - ProductManager cog loaded successfully at 2025-05-22 13:39:24 UTC
+2025-05-22 20:39:24,927 - __main__ - INFO - ✅ Loaded extension: ext.product_manager
+2025-05-22 20:39:25,996 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 284796f5d1f07dea849d60126591a6de).
+2025-05-22 20:39:28,027 - __main__ - INFO - Bot FDY is ready!
+2025-05-22 20:39:28,028 - __main__ - INFO - Bot ID: 1318180029091287071
+2025-05-22 20:39:28,028 - __main__ - INFO - Guild ID: 1318806349118963722
+2025-05-22 20:39:28,028 - __main__ - INFO - Admin ID: 1035189920488235120
+2025-05-22 20:39:28,028 - __main__ - INFO - ✅ Found Live Stock channel: 📜⌗・live-stock
+2025-05-22 20:39:28,028 - __main__ - INFO - ✅ Found Purchase Log channel: log-purch
+2025-05-22 20:39:28,029 - __main__ - INFO - ✅ Found Donation Log channel: deposit
+2025-05-22 20:39:28,029 - __main__ - INFO - ✅ Found History Buy channel: buy-logs
+2025-05-22 20:39:28,029 - __main__ - INFO - ✅ Found Music channel: 🔔⌗・music
+2025-05-22 20:39:28,029 - __main__ - INFO - ✅ Found Logs channel: 🔔⌗・logs
+2025-05-22 20:39:28,030 - TransactionCog - INFO - TransactionCog is ready at 2025-05-22 13:39:28 UTC
+2025-05-22 20:39:28,030 - BalanceManagerCog - INFO - BalanceManagerCog is ready at 2025-05-22 13:39:28 UTC
+2025-05-22 20:41:00,061 - discord.client - WARNING - PyNaCl is not installed, voice will NOT be supported
+2025-05-22 20:41:00,201 - database - INFO - Database setup completed successfully
+2025-05-22 20:41:00,248 - __main__ - INFO - Database initialized successfully
+2025-05-22 20:41:00,248 - discord.client - INFO - logging in using static token
+2025-05-22 20:41:01,301 - AdminCog - INFO - Admin ID loaded: 1035189920488235120
+2025-05-22 20:41:01,302 - cogs.admin - INFO - Admin cog loaded successfully at 2025-05-22 13:41:01 UTC
+2025-05-22 20:41:01,303 - __main__ - INFO - ✅ Loaded extension: cogs.admin
+2025-05-22 20:41:01,303 - __main__ - ERROR - ❌ Failed to load ext.live_stock: Extension 'ext.live_stock' could not be loaded or found.
+2025-05-22 20:41:01,304 - __main__ - ERROR - Detailed error loading ext.live_stock:
+Traceback (most recent call last):
+  File "/storage/emulated/0/test/main.py", line 124, in setup_hook
+    await self.load_extension(ext)
+  File "/data/data/com.termux/files/usr/lib/python3.12/site-packages/discord/ext/commands/bot.py", line 1027, in load_extension
+    raise errors.ExtensionNotFound(name)
+discord.ext.commands.errors.ExtensionNotFound: Extension 'ext.live_stock' could not be loaded or found.
+2025-05-22 20:41:01,328 - root - INFO - Transaction cog loaded successfully at 2025-05-22 13:41:01 UTC
+2025-05-22 20:41:01,328 - __main__ - INFO - ✅ Loaded extension: ext.trx
+2025-05-22 20:41:01,369 - Donation - ERROR - Failed to start donation server: [Errno 98] Address already in use
+2025-05-22 20:41:01,370 - Donation - INFO - Donation cog initialized
+2025-05-22 20:41:01,370 - root - INFO - Donation cog loaded successfully
+2025-05-22 20:41:01,371 - __main__ - INFO - ✅ Loaded extension: ext.donate
+2025-05-22 20:41:01,375 - BalanceManagerCog - INFO - BalanceManagerCog loading...
+2025-05-22 20:41:01,376 - root - INFO - BalanceManager cog loaded successfully at 2025-05-22 13:41:01 UTC
+2025-05-22 20:41:01,376 - __main__ - INFO - ✅ Loaded extension: ext.balance_manager
+2025-05-22 20:41:01,383 - ProductManagerCog - INFO - ProductManagerCog loading...
+2025-05-22 20:41:01,383 - root - INFO - ProductManager cog loaded successfully at 2025-05-22 13:41:01 UTC
+2025-05-22 20:41:01,384 - __main__ - INFO - ✅ Loaded extension: ext.product_manager
+2025-05-22 20:41:02,068 - discord.gateway - INFO - Shard ID None has connected to Gateway (Session ID: 42ee82aab3ce160cc2dda463534c2702).
+2025-05-22 20:41:04,111 - __main__ - INFO - Bot FDY is ready!
+2025-05-22 20:41:04,112 - __main__ - INFO - Bot ID: 1318180029091287071
+2025-05-22 20:41:04,112 - __main__ - INFO - Guild ID: 1318806349118963722
+2025-05-22 20:41:04,112 - __main__ - INFO - Admin ID: 1035189920488235120
+2025-05-22 20:41:04,112 - __main__ - INFO - ✅ Found Live Stock channel: 📜⌗・live-stock
+2025-05-22 20:41:04,112 - __main__ - INFO - ✅ Found Purchase Log channel: log-purch
+2025-05-22 20:41:04,113 - __main__ - INFO - ✅ Found Donation Log channel: deposit
+2025-05-22 20:41:04,113 - __main__ - INFO - ✅ Found History Buy channel: buy-logs
+2025-05-22 20:41:04,113 - __main__ - INFO - ✅ Found Music channel: 🔔⌗・music
+2025-05-22 20:41:04,113 - __main__ - INFO - ✅ Found Logs channel: 🔔⌗・logs
+2025-05-22 20:41:04,114 - TransactionCog - INFO - TransactionCog is ready at 2025-05-22 13:41:04 UTC
+2025-05-22 20:41:04,114 - BalanceManagerCog - INFO - BalanceManagerCog is ready at 2025-05-22 13:41:04 UTC
+2025-05-22 20:42:35,289 - discord.gateway - INFO - Shard ID None has successfully RESUMED session 284796f5d1f07dea849d60126591a6de.
