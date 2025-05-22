@@ -148,7 +148,18 @@ class AdvancedCommandHandler:
 
     async def handle_command(self, ctx, command_name: str, *args, **kwargs):
         """Handle command execution with all features"""
+        # Skip jika pesan sudah diproses
+        if hasattr(ctx.message, '_handled'):
+            return
+            
+        # Skip jika help command
+        if command_name.lower() == "help":
+            return
+            
         try:
+            # Tandai pesan sudah diproses
+            ctx.message._handled = True
+            
             # 1. Rate Limit Check
             if not await self.check_rate_limit(ctx):
                 await ctx.send("🚫 You're sending commands too fast!", delete_after=5)
@@ -171,28 +182,28 @@ class AdvancedCommandHandler:
             # 4. Track Analytics
             await self.analytics.track_command(ctx, command_name)
                 
-            # 5. Execute Command
-            command = self.bot.get_command(command_name)
-            await command.callback(command.cog, ctx, *args, **kwargs)
-            
-            # 6. Log successful command
-            await self.log_command(ctx, command_name, True)
-            
+            # 5. Execute Command dengan try-except terpisah
+            try:
+                command = self.bot.get_command(command_name)
+                if command:
+                    if command.cog:
+                        await command.callback(command.cog, ctx, *args, **kwargs)
+                    else:
+                        await command.callback(ctx, *args, **kwargs)
+                    await self.log_command(ctx, command_name, True)
+                else:
+                    await ctx.send(f"❌ Command '{command_name}' not found!", delete_after=5)
+                    
+            except Exception as cmd_error:
+                logger.error(f"Error executing command {command_name}: {cmd_error}")
+                await ctx.send("❌ An error occurred while executing the command!", delete_after=5)
+                await self.log_command(ctx, command_name, False, cmd_error)
+                return
+                
         except Exception as e:
-            # 7. Error Handling & Tracking
+            # 6. Error Handling & Tracking
             await self.analytics.track_error(command_name, e)
             await self.log_command(ctx, command_name, False, e)
             
-            if isinstance(e, commands.MissingPermissions):
-                await ctx.send("❌ You don't have permission to use this command!", delete_after=5)
-            elif isinstance(e, commands.CommandOnCooldown):
-                await ctx.send(
-                    f"⏰ Please wait {e.retry_after:.1f}s before using this command again!",
-                    delete_after=5
-                )
-            else:
-                logger.error(f"Error in command {command_name}: {e}")
-                await ctx.send(
-                    "❌ An error occurred while executing the command!",
-                    delete_after=5
-                )
+            logger.error(f"Error in command handler: {e}")
+            await ctx.send("❌ An unexpected error occurred!", delete_after=5)
