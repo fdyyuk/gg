@@ -88,8 +88,15 @@ class MyBot(commands.Bot):
         super().__init__(
             command_prefix='!',
             intents=intents,
-            help_command=commands.DefaultHelpCommand(no_category="Commands")  # Perbaikan untuk help command
+            help_command=commands.DefaultHelpCommand(
+                no_category='Commands',  # Kategori default untuk command tanpa cog
+                sort_commands=True,      # Urutkan command secara alfabetis
+                dm_help=False,          # Tampilkan help di channel, bukan DM
+                show_hidden=False,      # Jangan tampilkan hidden commands
+                verify_checks=True      # Cek permission sebelum menampilkan command
+            )
         )
+        self._command_handler_ready = False
         self.session = None
         self.admin_id = ADMIN_ID
         self.guild_id = GUILD_ID
@@ -99,11 +106,14 @@ class MyBot(commands.Bot):
         self.history_buy_channel_id = HISTORY_BUY_CHANNEL_ID
         self.config = config
         self.startup_time = datetime.utcnow()
-        self.command_handler = AdvancedCommandHandler(self)
 
     async def setup_hook(self):
         """Initialize bot components"""
         try:
+            if not self._command_handler_ready:
+                self.command_handler = AdvancedCommandHandler(self)
+                self._command_handler_ready = True
+                
             self.session = aiohttp.ClientSession()
             
             # Load extensions with proper error handling
@@ -127,7 +137,7 @@ class MyBot(commands.Bot):
                 except Exception as e:
                     logger.error(f'❌ Failed to load {ext}: {e}')
                     logger.exception(f"Detailed error loading {ext}:")
-                    continue  # Continue loading other extensions
+                    continue
                     
         except Exception as e:
             logger.error(f"Fatal error in setup_hook: {e}")
@@ -184,7 +194,7 @@ class MyBot(commands.Bot):
             )
         except Exception as e:
             logger.error(f"Error in on_ready: {e}")
-            logger.exception("Detailed error in on_ready:")
+            logger.exception("Detailed on_ready error:")
 
     async def on_message(self, message):
         """Handle message events"""
@@ -204,99 +214,71 @@ class MyBot(commands.Bot):
                     f'{message.author}: {message.content}'
                 )
 
-            await self.process_commands(message)
+            # Proses command hanya jika belum ditangani
+            if not hasattr(message, '_handled'):
+                await self.process_commands(message)
+                
         except Exception as e:
             logger.error(f"Error processing message: {e}")
             logger.exception("Detailed message processing error:")
 
     async def on_command(self, ctx):
-        """Event when command is triggered"""
+        """Event when a command is about to be executed"""
         try:
-            await self.command_handler.handle_command(
-                ctx, 
-                ctx.command.name,
-                *ctx.args[2:],
-                **ctx.kwargs
-            )
+            command_name = ctx.command.name if ctx.command else ctx.invoked_with
+            await self.command_handler.handle_command(ctx, command_name, *ctx.args[2:], **ctx.kwargs)
         except Exception as e:
-            logger.error(f"Command handling error: {e}")
-            logger.exception("Detailed command handling error:")
+            logger.error(f"Error in command event: {e}")
+            logger.exception("Detailed command event error:")
 
     async def on_command_error(self, ctx, error):
-        """Global error handler"""
+        """Global error handler for commands"""
         try:
-            if isinstance(error, commands.errors.CheckFailure):
+            if isinstance(error, commands.CommandNotFound):
+                return  # Ignore command not found errors
+                
+            command_name = ctx.command.name if ctx.command else ctx.invoked_with
+            
+            if isinstance(error, commands.MissingPermissions):
                 await ctx.send("❌ You don't have permission to use this command!", delete_after=5)
-            elif isinstance(error, commands.errors.CommandNotFound):
-                pass  # Ignore command not found
-            elif isinstance(error, commands.errors.MissingRequiredArgument):
-                await ctx.send(f"❌ Missing required argument: {error.param.name}", delete_after=5)
-            elif isinstance(error, commands.errors.BadArgument):
-                await ctx.send("❌ Invalid argument provided!", delete_after=5)
-            else:
-                error_msg = f'Error in command {ctx.command}: {error}'
-                logger.error(error_msg)
+            elif isinstance(error, commands.CommandOnCooldown):
                 await ctx.send(
-                    "❌ An error occurred! The administrator has been notified.",
+                    f"⏰ Please wait {error.retry_after:.1f}s before using this command again!",
                     delete_after=5
                 )
-                
-                # Notify admin if serious error
-                if not isinstance(error, (commands.errors.CheckFailure, commands.errors.CommandNotFound)):
-                    admin = self.get_user(self.admin_id)
-                    if admin:
-                        await admin.send(f"⚠️ Bot Error:\n```{error_msg}```")
+            else:
+                logger.error(f"Unhandled command error in {command_name}: {error}")
+                logger.exception("Detailed command error:")
+                await ctx.send(
+                    "❌ An error occurred while executing the command!",
+                    delete_after=5
+                )
         except Exception as e:
-            logger.error(f"Error handling command error: {e}")
-            logger.exception("Detailed error handling error:")
+            logger.error(f"Error in error handler: {e}")
+            logger.exception("Detailed error handler error:")
 
-    async def on_guild_join(self, guild):
-        """Event when bot joins a new guild"""
-        try:
-            logger.info(f"Bot joined new guild: {guild.name} (ID: {guild.id})")
-            if guild.id != self.guild_id:
-                logger.warning(f"Bot joined unauthorized guild: {guild.name} (ID: {guild.id})")
-                await guild.leave()
-        except Exception as e:
-            logger.error(f"Error handling guild join: {e}")
-            
-    @commands.is_owner()
-    async def reload_extension(self, ctx, extension):
-        """Reload a specific extension"""
-        try:
-            await self.unload_extension(extension)
-            await self.load_extension(extension)
-            await ctx.send(f"✅ Reloaded extension: {extension}")
-        except Exception as e:
-            await ctx.send(f"❌ Error reloading {extension}: {e}")
-            logger.error(f"Error reloading {extension}: {e}")
-            logger.exception(f"Detailed extension reload error:")
-
-bot = MyBot()
-
-async def main():
-    """Main function to run the bot"""
+def run_bot():
+    """Start the bot with proper error handling"""
     try:
-        # Initialize database
+        # Setup database
         setup_database()
-        logger.info("Database initialized successfully")
         
-        # Start bot
-        async with bot:
-            await bot.start(TOKEN)
+        # Create and run bot
+        bot = MyBot()
+        bot.run(TOKEN, reconnect=True)
+        
     except Exception as e:
-        logger.error(f'Fatal error: {e}')
+        logger.critical(f"Fatal error: {e}")
         logger.exception("Detailed fatal error:")
-        raise
+        
     finally:
-        if not bot.is_closed():
-            await bot.close()
+        # Cleanup
+        try:
+            conn = get_connection()
+            if conn:
+                conn.close()
+        except Exception as e:
+            logger.error(f"Error closing database connection: {e}")
 
 if __name__ == '__main__':
-    try:
-        asyncio.run(main())
-    except KeyboardInterrupt:
-        logger.info('Bot stopped by user')
-    except Exception as e:
-        logger.error(f'Fatal error occurred: {e}')
-        logger.exception("Detailed fatal error on startup:")
+    run_bot()
